@@ -38,6 +38,8 @@ rf = RandomForestClassifier(
     n_jobs=-1
 )
 
+#new change 
+
 # ── 4. Cross-validated probability estimates (no data leakage) ───────────────
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 train_probs = cross_val_predict(rf, X_train_scaled, y_train,
